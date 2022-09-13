@@ -17,14 +17,3 @@ double integrator(function<double(double)> func, double x1, double x2, int incre
 
 }
 
-double func(double x) {
-	return x*x+7*x+3;
-}
-#include <iostream>
-int main() {
-
-	double a = integrator(func, -1.123, 1.0, 5000);
-	cout << a;
-	cin.get();
-
-}
